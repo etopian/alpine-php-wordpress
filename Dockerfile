@@ -42,7 +42,7 @@ ADD files/php-fpm.conf /etc/php7/
 ADD files/run.sh /
 RUN chmod +x /run.sh
 
-RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp-cli
+RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp-cli
 
 EXPOSE 80
 VOLUME ["/DATA"]
