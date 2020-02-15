@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-
+copy ( '/DATA/htdocs/wp-config-sample.php' , '/DATA/htdocs/wp-config.php');
 $filepath = '/DATA/htdocs/wp-config.php';
 
 $define = "/** The Database Collate type. Don't change this if in doubt. */";
